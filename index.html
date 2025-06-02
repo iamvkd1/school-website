@@ -5,6 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Green Valley School</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts for modern, elegant typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: linear-gradient(135deg, #e6ffe9 0%, #c8e6c9 100%);
+      color: #212121;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(90deg, #43a047 0%, #388e3c 100%);
+      color: #fff;
+      padding: 30px 0 20px 0;
+      box-shadow: 0 2px 8px rgba(60,100,60,0.13);
+    }
+
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.7rem;
+      margin: 0 0 10px 0;
+      letter-spacing: 1px;
+      text-align: center;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    nav a:hover {
+      background: #fff;
+      color: #388e3c;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #b2ff59 0%, #69f0ae 100%);
+      box-shadow: 0 2px 12px rgba(34,139,34,0.07);
+      border-radius: 18px;
+      margin: 35px auto 30px auto;
+      max-width: 700px;
+      text-align: center;
+      padding: 42px 28px 36px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -45px; left: -45px;
+      width: 130px; height: 130px;
+      background: rgba(67,160,71,0.14);
+      border-radius: 50%;
+      z-index: 0;
+    }
+    .hero h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.1rem;
+      margin: 0 0 12px 0;
+      position: relative;
+      z-index: 1;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+      font-weight: 500;
+      color: #27632a;
+    }
+
+    .about {
+      max-width: 700px;
+      margin: 0 auto 30px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(34,139,34,0.05);
+      padding: 32px 24px 28px 24px;
+      text-align: center;
+    }
+    .about h2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #388e3c;
+      font-size: 1.6rem;
+      margin-top: 0;
+    }
+    .about p {
+      font-size: 1.09rem;
+      margin-bottom: 0;
+    }
+
+    footer {
+      margin-top: auto;
+      background: #388e3c;
+      color: #fff;
+      text-align: center;
+      padding: 18px 0;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      box-shadow: 0 -2px 8px rgba(56,142,60,0.07);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 800px) {
+      .hero, .about { max-width: 96vw; }
+    }
+    @media (max-width: 500px) {
+      header h1 { font-size: 1.6rem; }
+      nav ul { gap: 11px; }
+      .hero h2 { font-size: 1.13rem; }
+      .hero { padding: 22px 7vw 18px 7vw; }
+      .about { padding: 18px 6vw 13px 6vw; }
+      footer { font-size: 0.98rem; }
+    }
+  </style>
 </head>
 <body>
   <header>
